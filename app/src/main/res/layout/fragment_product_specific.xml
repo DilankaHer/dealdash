@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/productContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/backButtonProductDetails"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="Back"
+            android:gravity="center"
+            app:iconGravity="textStart"
+            app:iconPadding="5dp"
+            app:icon="@drawable/ic_back_24"
+            android:backgroundTint="@color/tab_colour"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/removeButtonProductDetails"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"
+            android:text="Remove"
+            android:gravity="center"
+            app:iconGravity="textStart"
+            app:iconPadding="5dp"
+            app:icon="@drawable/ic_delete_forever_24"
+            android:backgroundTint="@color/delete_forever"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadImageProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:text="@string/add_more_image"
+        app:icon="@drawable/ic_upload_24"
+        app:iconGravity="textStart"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imagePagerProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pageViewPagers"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="@dimen/image_page_counter"
+            android:gravity="center"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/tab_colour"
+            app:cornerRadius="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingEnd="5dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deleteFabProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:srcCompat="@drawable/ic_delete_24"
+                app:fabSize="mini"
+                android:elevation="10dp"
+                android:visibility="gone"
+                android:backgroundTint="@color/button_colour"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/uploadFabProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:srcCompat="@drawable/ic_edit_24"
+                app:fabSize="mini"
+                android:elevation="10dp"
+                android:backgroundTint="@color/button_colour"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/nameFieldProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Product"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_weight="3"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nameProductEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/priceFieldProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Price"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/priceProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/priceProductEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="10"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/descFieldProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="More Info"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/descProductEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:background="@drawable/image_border"
+        android:maxLines="50"/>
+
+</LinearLayout>

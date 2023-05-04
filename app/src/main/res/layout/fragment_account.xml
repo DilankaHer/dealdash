@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:id="@+id/accountLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/welcomeTextTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/firstNameFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="First Name"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_weight="3"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/firstNameTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firstNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/lastNameFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Last Name"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lastNameTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lastNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/emailFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Email"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emailEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/mobileNoFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Mobile No."
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mobileNoTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mobileNoEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/facebookFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Facebook"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/facebookTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebookEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/lineFieldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Line ID"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lineTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lineEdit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            app:icon="@drawable/ic_edit_15"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

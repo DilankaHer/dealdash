@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DealDash</string>
+    <string name="sign_up_first_name">First Name<font color='#FF0000'>*</font></string>
+    <string name="sign_up_last_name">Last Name<font color='#FF0000'>*</font></string>
+    <string name="sign_up_email">Email<font color='#FF0000'>*</font></string>
+    <string name="sign_up_password">Password<font color='#FF0000'>*</font></string>
+    <string name="sign_up_mobile">Mobile No.<font color='#FF0000'>*</font></string>
+    <string name="sign_up_line">Line ID</string>
+    <string name="sign_up_facebook">Facebook Name</string>
+    <string name="product_name">Product Name<font color='#FF0000'>*</font></string>
+    <string name="product_price">Price<font color='#FF0000'>*</font></string>
+    <string name="product_desc">More Info</string>
+    <string name="product_image">Image(first image is the main image)<font color='#FF0000'>*</font></string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+    <string name="sign_up_menu">Sign Up</string>
+    <string name="sign_in_menu">Sign In</string>
+    <string name="account_menu">Account</string>
+    <string name="sell_product_menu">Sell Product</string>
+    <string name="verify_email_address_menu">Resend verification email</string>
+    <string name="sign_out_menu">Sign Out</string>
+    <string name="title_activity_account_tabbed">AccountTabbedActivity</string>
+    <string name="tab_text_1">Account Details</string>
+    <string name="tab_text_2">Product Details</string>
+    <string name="welcome_message">Hi %1$s!</string>
+    <string name="display_price">%.2f %2$s</string>
+    <string name="no_desc">*No additional information*</string>
+    <string name="seller_name">%1$s %2$s</string>
+    <string name="title_edit_dialog">Edit %1$s</string>
+    <string name="page_counter_image">%1$s/%2$s</string>
+    <string name="no_products_home">Our sellers aren\'t back from the ghost town yet. No items available</string>
+    <string name="no_products_search">As empty as a ghost town</string>
+    <string name="preview_menu">Preview</string>
+    <string name="edit_menu">Edit</string>
+    <string name="add_more_image">Add Another Image</string>
+    <string name="no_user_products">The eternal void is filled with infinite possibilities</string>
+    <string name="mark_as_sold">Mark as Sold</string>
+    <string name="mark_as_not_sold">Mark as Not Sold</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

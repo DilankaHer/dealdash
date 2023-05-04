@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#C7D9E6</color>
+    <color name="light_gray">#ECECEC</color>
+    <color name="light_green">#C7E5C9</color>
+    <color name="light_purple">#D8CEF6</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="dark_lavender">#734f96</color>
+    <color name="copper">#B87333</color>
+    <color name="olive_green">#BAB86C</color>
+    <color name="pewter">#E9EAEC</color>
+    <color name="background_window">#F0F7ED</color>
+    <color name="button_colour">#AEDBCE</color>
+    <color name="font_colour">#635666</color>
+    <color name="font_colour_hint">#9d8ca1</color>
+    <color name="tab_colour">#839AA8</color>
+    <color name="tab_font_colour_selected">#4F4552</color>
+    <color name="nav_item_colour">#c9f0e5</color>
+    <color name="disable_dialog_button">#b4ccdb</color>
+    <color name="delete_forever">#b00707</color>
+</resources>

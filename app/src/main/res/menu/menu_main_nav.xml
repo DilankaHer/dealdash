@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:menuCategory="container">
+        <item
+            android:id="@+id/menuItemSignup"
+            android:title="@string/sign_up_menu"
+            android:visible="true"/>
+        <item
+            android:id="@+id/menuItemSignin"
+            android:title="@string/sign_in_menu"
+            android:visible="true"/>
+        <item
+            android:id="@+id/menuItemAccount"
+            android:title="@string/account_menu"
+            android:visible="true"/>
+        <item
+            android:id="@+id/menuItemSell"
+            android:title="@string/sell_product_menu"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/menuItemSignout"
+            android:title="@string/sign_out_menu"
+            android:visible="true"
+            />
+    </group>
+</menu>

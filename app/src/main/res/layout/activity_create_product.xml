@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/productNameCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_price"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/productPriceCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_desc"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/productDescCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_image"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadButtonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:text="Upload New Image"
+            app:icon="@drawable/ic_upload_24"
+            app:iconGravity="textStart"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/frameLayoutCreate"
+            android:visibility="gone">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/imagePagerCreate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pageViewPagers"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:textSize="@dimen/image_page_counter"
+                android:gravity="center"
+                android:layout_gravity="bottom|start"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/tab_colour"
+                app:cornerRadius="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:paddingRight="5dp">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deleteButtonViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:srcCompat="@drawable/ic_delete_24"
+                app:fabSize="mini"
+                android:elevation="10dp"
+                android:visibility="gone"
+                android:backgroundTint="@color/button_colour"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/uploadButtonViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:srcCompat="@drawable/ic_edit_24"
+                app:fabSize="mini"
+                android:elevation="10dp"
+                android:backgroundTint="@color/button_colour"/>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/submitButtonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/tab_colour"
+            android:enabled="false"/>
+
+    </LinearLayout>
+</ScrollView>

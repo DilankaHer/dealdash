@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116793173895",
+    "project_id": "dealdash-ebabe",
+    "storage_bucket": "dealdash-ebabe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116793173895:android:10caca81c340b849e95522",
+        "android_client_info": {
+          "package_name": "com.example.dealdash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116793173895-0hf0li8ohooj4qvpjd11oerje13t3909.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjCr2gmHSEYF6sDx9CIPJwGGjPEKq7eNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116793173895-0hf0li8ohooj4qvpjd11oerje13t3909.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
